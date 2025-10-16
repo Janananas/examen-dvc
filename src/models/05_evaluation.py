@@ -5,9 +5,9 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 
 def main():
-    srcDataPath = pathlib.Path("../../data/processed_data/")
-    modelPath = pathlib.Path("../../models/")
-    metricsPath = pathlib.Path("../../metrics/")
+    srcDataPath = pathlib.Path("data/processed_data/")
+    modelPath = pathlib.Path("models/")
+    metricsPath = pathlib.Path("metrics/")
 
     X_test = pd.read_csv(srcDataPath / "X_test_scaled.csv")
     y_test = pd.read_csv(srcDataPath / "Y_test.csv")

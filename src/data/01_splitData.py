@@ -4,8 +4,8 @@ import pathlib
 
 
 def main():
-    srcDataPath = "../../data/raw_data/raw.csv"
-    destDataPath = pathlib.Path("../../data/processed_data/")
+    srcDataPath = "data/raw_data/raw.csv"
+    destDataPath = pathlib.Path("data/processed_data/")
     targetColumn = "silica_concentrate"
 
     df = pd.read_csv(srcDataPath)

@@ -5,8 +5,8 @@ import pandas as pd
 
 
 def main():
-    srcDataPath = pathlib.Path("../../data/processed_data/")
-    modelPath = pathlib.Path("../../models/")
+    srcDataPath = pathlib.Path("data/processed_data/")
+    modelPath = pathlib.Path("models/")
     X_train = pd.read_csv(srcDataPath / "X_train_scaled.csv")
     y_train = pd.read_csv(srcDataPath / "Y_train.csv")
 

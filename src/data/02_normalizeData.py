@@ -4,8 +4,8 @@ import pathlib
 
 
 def main(dataFileSrc: str, dataFileDest: str):
-    srcDataPath = pathlib.Path("../../data/processed_data/") / dataFileSrc
-    destDataPath = pathlib.Path("../../data/processed_data/")
+    srcDataPath = pathlib.Path("data/processed_data/") / dataFileSrc
+    destDataPath = pathlib.Path("data/processed_data/")
 
     df = pd.read_csv(srcDataPath)
     df_noDate = df.drop(columns=["date"])
