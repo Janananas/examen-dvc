@@ -50,4 +50,6 @@ stages:
     - src/models/05_evaluation.py
     outs:
     - data/processed_data/predictions.csv
-    - metrics/scores.json
+    metrics:
+    - metrics/scores.json:
+        cache: false
